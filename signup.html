@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - ShopKart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo"><a href="index.html">ShopKart</a></h1>
+            <nav class="nav">
+                <a href="login.html" class="nav-link">Login</a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="form-container">
+                <h2>Create Your Account</h2>
+                <form id="signupForm" class="form">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                        <span class="error-message" id="firstNameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                        <span class="error-message" id="lastNameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <span class="error-message" id="phoneError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <span class="error-message" id="genderError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birthYear">Birth Year</label>
+                        <input type="number" id="birthYear" name="birthYear" min="1900" max="2024" required>
+                        <span class="error-message" id="birthYearError"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">Sign Up</button>
+                </form>
+
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <h3>Account Created Successfully!</h3>
+                    <p id="passwordMessage"></p>
+                    <a href="login.html" class="btn btn-primary">Go to Login</a>
+                </div>
+
+                <p class="form-footer">
+                    Already have an account? <a href="login.html">Login here</a>
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html

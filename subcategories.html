@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subcategories - ShopKart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo"><a href="index.html">ShopKart</a></h1>
+            <nav class="nav">
+                <a href="categories.html" class="nav-link">Categories</a>
+                <a href="cart.html" class="nav-link">Cart (<span id="cartCount">0</span>)</a>
+                <a href="#" onclick="logout()" class="nav-link">Logout</a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="page-header">
+                <h2 id="categoryTitle">Select Style</h2>
+                <p id="categoryDescription">Choose your preferred style</p>
+            </div>
+
+            <div id="subcategoriesContainer" class="categories-grid">
+                <!-- Subcategories will be populated by JavaScript -->
+            </div>
+
+            <!-- Kids gender selection (shown only for kids category) -->
+            <div id="kidsGenderSelection" class="categories-grid" style="display: none;">
+                <div class="category-card" onclick="selectKidsGender('male')">
+                    <div class="category-icon">👦</div>
+                    <h3>Boys</h3>
+                    <p>Clothes for boys</p>
+                </div>
+
+                <div class="category-card" onclick="selectKidsGender('female')">
+                    <div class="category-icon">👧</div>
+                    <h3>Girls</h3>
+                    <p>Clothes for girls</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="shop.js"></script>
+</body>
+</html>

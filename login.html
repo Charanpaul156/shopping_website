@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - ShopHub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo"><a href="index.html">ShopKart</a></h1>
+            <nav class="nav">
+                <a href="signup.html" class="nav-link">Sign Up</a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="form-container">
+                <h2>Login to Your Account</h2>
+                <form id="loginForm" class="form">
+                    <div class="form-group">
+                        <label for="loginEmail">Email</label>
+                        <input type="email" id="loginEmail" name="email" required>
+                        <span class="error-message" id="loginEmailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" name="password" required>
+                        <span class="error-message" id="loginPasswordError"></span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">Login</button>
+                </form>
+
+                <div id="loginError" class="error-message" style="display: none; text-align: center; margin-top: 1rem;">
+                    Invalid credentials. Please try again.
+                </div>
+
+                <p class="form-footer">
+                    Don't have an account? <a href="signup.html">Sign up here</a>
+                </p>
+            </div>
+        </main>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+</html>

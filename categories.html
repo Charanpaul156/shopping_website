@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - ShopKart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="logo"><a href="index.html">ShopKart</a></h1>
+            <nav class="nav">
+                <a href="cart.html" class="nav-link">Cart (<span id="cartCount">0</span>)</a>
+                <a href="#" onclick="logout()" class="nav-link">Logout</a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div class="page-header">
+                <h2>Shop by Category</h2>
+                <p>Welcome back! Choose a category to start shopping.</p>
+            </div>
+
+            <div class="categories-grid">
+                <div class="category-card" onclick="selectCategory('men')">
+                    <div class="category-icon">👔</div>
+                    <h3>Men</h3>
+                    <p>Ethnic & Western wear for men</p>
+                </div>
+
+                <div class="category-card" onclick="selectCategory('women')">
+                    <div class="category-icon">👗</div>
+                    <h3>Women</h3>
+                    <p>Elegant ethnic & western outfits</p>
+                </div>
+
+                <div class="category-card" onclick="selectCategory('kids')">
+                    <div class="category-icon">👶</div>
+                    <h3>Kids</h3>
+                    <p>Adorable clothes for boys & girls</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="shop.js"></script>
+</body>
+</html>
