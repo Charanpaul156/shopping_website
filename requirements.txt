@@ -1,0 +1,5 @@
+● Frontend: HTML, CSS, JavaScript
+● Backend: Python (Flask)
+● Database: MySQL
+● Server Runtime: Flask Development Server
+● Python MySQL Connector: mysql-connector-python
